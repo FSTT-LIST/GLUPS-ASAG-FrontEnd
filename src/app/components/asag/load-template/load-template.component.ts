@@ -47,6 +47,7 @@ export class LoadTemplateComponent implements OnInit {
           this.asag_request.push( { question: elem.question ,  answer: '' , keywords: [elem.keywords[0], elem.keywords[1], elem.keywords[2], elem.keywords[3]] } ) ;
         }
        }
+      if ( this.asag_request.length == 0 ) { this.submited = true ; }
       console.log('questions: ', this.questions);
       console.log('asag_request: ', this.asag_request);
   }
